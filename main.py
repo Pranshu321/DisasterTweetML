@@ -26,8 +26,7 @@ def main():
         result = ""
         if st.button("Predict"):
             result = predict_the_output(text)
-            print(result)
-            if result[0] == 1:  # Adjust threshold based on your model
+            if result[0] == 1:
                 st.success('This is a Disaster Tweet')
             else:
                 st.error('This is a Non Disaster Tweet')
